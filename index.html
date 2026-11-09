@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="logo-header.webp">
+<title>Aija Gofmane – Grāmatvedība un konsultācijas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Aija Gofmane – grāmatvedības pakalpojumi un konsultācijas uzņēmumiem un pašnodarbinātajiem Liepājā. Precīza uzskaite, nodokļu konsultācijas, finanšu pārskati un individuāla pieeja katram klientam.">
+<meta name="theme-color" content="#000A16">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="lv_LV">
+<meta property="og:title" content="Aija Gofmane – Grāmatvedība un konsultācijas">
+<meta property="og:description" content="Grāmatvedības pakalpojumi un konsultācijas uzņēmumiem un pašnodarbinātajiem Liepājā. Individuāla pieeja katram klientam.">
+<!-- Production (Vercel): add <link rel="canonical" href="https://DOMENS.lv/"> and <link rel="alternate" hreflang="en" href="https://DOMENS.lv/en/"> when the English version exists. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Aija Gofmane – Grāmatvedība un konsultācijas",
+  "legalName": "SIA International Property Service",
+  "telephone": "+37127574406",
+  "email": "figaro9@inbox.lv",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bāriņu iela 15, 3. stāvs",
+    "addressLocality": "Liepāja",
+    "addressCountry": "LV"
+  },
+  "areaServed": "LV",
+  "inLanguage": "lv"
+}
+</script>
+<style>
+/* Layout concept: an engraved-ledger rhythm on dark blue throughout (client's choice). Sections alternate between the
+   logo's navy and slightly lighter blues; gold appears only where the logo would put it — rules, icons, the call to act. */
+:root{
+  --navy-900:#030B1C;
+  --navy:#07152F;
+  --midnight:#0B1D3A;
+  --royal:#244C83;
+  --steel:#54769D;
+  --sky:#DCE8F4;
+  --mist:#F2F6FA;
+  --white:#FFFFFF;
+  --gold:#D6A943;
+  --gold-lt:#F0D58A;
+  --gold-deep:#D6A943;          /* page is dark everywhere now */
+  --logo-navy:#000A16;
+  --panel:#0E2448;              /* cards on dark */
+  --accent-txt:#9DB8DA;         /* light blue for links/labels */
+  --ink:#F2F6FA;                /* headings */
+  --ink-soft:#A9BAD1;           /* body */
+  --on-dark:#E9EFF7;            /* body on navy */
+  --on-dark-soft:#A9BAD1;
+  --line-light:rgba(240,213,138,.16);
+  --line-dark:rgba(240,213,138,.18);
+
+  --f-display:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --f-body:"Instrument Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-caps:"Cinzel","Trajan Pro","Times New Roman",serif;
+
+  --wrap:1200px;
+  --gutter:clamp(16px,4.5vw,48px);
+  --sec:clamp(72px,10vw,136px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--navy);color:var(--ink);font:400 17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--navy-900)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+section{scroll-margin-top:90px}
+
+.wrap{max-width:calc(var(--wrap) + 2*var(--gutter));margin:0 auto;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--f-display);font-weight:400;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.6rem,5.6vw,4.6rem);line-height:1.02;font-weight:300}
+h2{font-size:clamp(2.1rem,4.2vw,3.4rem);line-height:1.06;font-weight:300}
+h3{font-size:1.45rem;line-height:1.2}
+h1 em,h2 em{font-style:italic;font-weight:300}
+p{margin:0;text-wrap:pretty}
+.eyebrow{font:600 .74rem/1 var(--f-caps);letter-spacing:.22em;text-transform:uppercase;display:inline-flex;align-items:center;gap:14px;color:var(--gold)}
+.eyebrow::before{content:"";width:36px;height:1px;background:currentColor;opacity:.7}
+.on-dark .eyebrow{color:var(--gold)}
+.lead{font-size:1.14rem;line-height:1.7;color:var(--ink-soft);max-width:60ch}
+.on-dark .lead{color:var(--on-dark-soft)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;font:600 .95rem/1 var(--f-body);letter-spacing:.01em;text-decoration:none;padding:17px 26px;border:1px solid transparent;cursor:pointer;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease)}
+.btn svg{width:16px;height:16px;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-gold{background:var(--gold);color:var(--navy-900)}
+.btn-gold:hover{background:var(--gold-lt)}
+.btn-ghost{border-color:rgba(240,213,138,.45);color:var(--gold-lt);background:transparent}
+.btn-ghost:hover{border-color:var(--gold-lt);background:rgba(240,213,138,.08)}
+.btn-navy{background:var(--gold);color:var(--navy-900)}
+.btn-navy:hover{background:var(--gold-lt)}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:#000A16;border-bottom:1px solid var(--line-dark);transition:background .4s}
+.nav{display:flex;align-items:center;justify-content:center;gap:24px;padding-block:16px}
+.brand{display:block;line-height:0;flex:none}
+.brand img{height:78px;width:auto;max-width:100%;transition:height .4s var(--ease)}
+.scrolled .nav{padding-block:10px}
+.nav{transition:padding .4s var(--ease)}
+.nav-links{display:flex;align-items:center;gap:clamp(18px,2.6vw,36px);list-style:none;margin:0;padding:0}
+.nav-links a{font:500 .93rem/1 var(--f-body);color:var(--on-dark);text-decoration:none;position:relative;padding-block:8px}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.nav-links a:not(.btn):hover::after{transform:scaleX(1)}
+.nav-links .btn{padding:13px 20px}
+.menu-btn{display:none;background:none;border:1px solid var(--line-dark);color:var(--gold-lt);width:46px;height:46px;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn span{display:block;width:18px;height:1px;background:currentColor;position:relative;transition:background .3s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:18px;height:1px;background:currentColor;transition:transform .3s var(--ease)}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-open .menu-btn span{background:transparent}
+.menu-open .menu-btn span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .menu-btn span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--navy);color:var(--white);position:relative;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%;z-index:-2;filter:saturate(.55) contrast(1.05)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:
+  linear-gradient(90deg,#000A16 0%,#000A16 50%,rgba(0,10,22,.82) 58%,rgba(7,21,47,.72) 75%,rgba(7,21,47,.88) 100%),
+  linear-gradient(90deg,transparent 50%,rgba(3,11,28,.35) 100%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center;padding-block:clamp(72px,9vw,130px) clamp(64px,8vw,110px)}
+.hero-logo{min-width:0}
+.hero-logo img{width:110%;height:auto;max-width:none;margin-left:-6%;aspect-ratio:3/2;object-fit:contain;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);
+  -webkit-mask-composite:source-in;
+          mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);
+          mask-composite:intersect;animation:glow 1.4s var(--ease) both .1s}
+@keyframes glow{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+.hero-copy{display:grid;gap:28px;min-width:0;max-width:640px}
+.hero h1 em{color:var(--gold-lt)}
+.hero .lead{color:#C3D1E4}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.hero-band{position:relative;border-top:1px solid var(--line-dark)}
+.hero-band ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.hero-band li{padding:26px 24px 28px 0;display:flex;gap:14px;align-items:baseline;color:var(--on-dark);font-size:.98rem}
+.hero-band li + li{padding-left:24px;border-left:1px solid var(--line-dark)}
+.hero-band b{font:400 1.25rem/1 var(--f-display);font-style:italic;color:var(--gold)}
+
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes drift{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero-copy > *{animation:rise .9s var(--ease) both}
+.hero-copy > *:nth-child(2){animation-delay:.08s}
+.hero-copy > *:nth-child(3){animation-delay:.16s}
+.hero-copy > *:nth-child(4){animation-delay:.24s}
+.hero-bg{animation:drift 2.4s var(--ease) both}
+
+/* ---------- about ---------- */
+.about{background:
+  repeating-linear-gradient(180deg,transparent 0 35px,rgba(240,213,138,.035) 35px 36px),var(--navy)}
+.about-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(36px,6vw,96px);padding-block:var(--sec);align-items:start}
+.portrait{position:relative;aspect-ratio:4/5;max-width:100%;background:var(--panel);border:1px solid var(--line-light)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.portrait::after{content:"";position:absolute;inset:14px;border:1px solid rgba(214,169,67,.55);pointer-events:none}
+.portrait figcaption{position:absolute;left:14px;right:14px;bottom:14px;padding:44px 20px 18px;background:linear-gradient(180deg,transparent,rgba(7,21,47,.88));color:var(--white);font:400 1.15rem/1.2 var(--f-display);font-style:italic}
+.portrait figcaption small{display:block;margin-top:4px;font:600 .66rem/1.3 var(--f-caps);font-style:normal;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt)}
+.portrait::after{z-index:1}
+.about-copy{display:grid;gap:26px;min-width:0}
+.about-copy p{color:var(--ink-soft);max-width:62ch}
+.about-copy strong{color:var(--ink);font-weight:600}
+.quote{margin:12px 0 0;padding:28px 0 0;border-top:1px solid var(--gold);max-width:56ch}
+.quote p{font:300 clamp(1.45rem,2.4vw,1.85rem)/1.35 var(--f-display);font-style:italic;color:var(--ink)}
+.quote cite{display:block;margin-top:14px;font:600 .74rem/1 var(--f-caps);letter-spacing:.2em;color:var(--gold-deep);font-style:normal;text-transform:uppercase}
+
+/* ---------- services ---------- */
+.services{background:var(--midnight)}
+.services .wrap{padding-block:var(--sec)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:24px 64px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+.sec-head > div{display:grid;gap:20px;min-width:0}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(240,213,138,.16);border:1px solid rgba(240,213,138,.16)}
+.svc{background:var(--panel);padding:clamp(28px,3vw,40px);display:grid;gap:16px;align-content:start;position:relative;transition:background .45s var(--ease),color .45s var(--ease);min-width:0}
+.svc svg{width:44px;height:44px;stroke:var(--gold-deep);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;transition:stroke .45s var(--ease),transform .45s var(--ease)}
+.svc h3{color:var(--ink);transition:color .45s var(--ease)}
+.svc p{color:var(--ink-soft);font-size:.98rem;transition:color .45s var(--ease)}
+.svc::after{content:"";position:absolute;left:clamp(28px,3vw,40px);right:clamp(28px,3vw,40px);bottom:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.svc:hover{background:var(--logo-navy)}
+.svc:hover h3{color:var(--white)}
+.svc:hover p{color:var(--on-dark-soft)}
+.svc:hover svg{stroke:var(--gold);transform:translateY(-3px)}
+.svc:hover::after{transform:scaleX(1)}
+.svc-note{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;color:var(--ink-soft)}
+.svc-self{margin-top:clamp(28px,4vw,40px);display:grid;grid-template-columns:auto 1fr auto;gap:20px 32px;align-items:center;padding:clamp(24px,3vw,32px) clamp(24px,3vw,40px);border:1px solid rgba(240,213,138,.4);background:linear-gradient(90deg,rgba(214,169,67,.10),rgba(214,169,67,0) 70%)}
+.svc-self svg{width:44px;height:44px;stroke:var(--gold);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.svc-self h3{color:var(--ink);margin-bottom:6px}
+.svc-self p{color:var(--ink-soft);max-width:62ch}
+.svc-self > div{min-width:0}
+.text-link{font-weight:600;color:var(--gold-lt);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px;transition:color .3s}
+.text-link:hover{color:var(--white)}
+
+/* ---------- why ---------- */
+.why{background:var(--navy-900) radial-gradient(70% 90% at 85% 10%,rgba(36,76,131,.35),transparent 70%);color:var(--white)}
+.why-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px);padding-block:var(--sec)}
+.why-intro{display:grid;gap:24px;align-content:start;min-width:0}
+.why-intro h2 em{color:var(--gold-lt)}
+.why-intro .lead{color:#D2DEEE}
+.why-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:44px 48px}
+.why-list li{display:grid;gap:12px;padding-top:22px;border-top:1px solid rgba(240,213,138,.55);min-width:0}
+.why-list .mark{width:9px;height:9px;transform:rotate(45deg);background:var(--gold);margin-bottom:4px}
+.why-list h3{color:var(--white)}
+.why-list p{color:#D2DEEE;font-size:.98rem}
+
+/* ---------- process ---------- */
+.process{background:var(--navy)}
+.process .wrap{padding-block:var(--sec)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:34px;height:1px;background:linear-gradient(90deg,var(--gold),rgba(214,169,67,.25))}
+.steps li{position:relative;padding-right:clamp(16px,3vw,48px);display:grid;gap:14px;align-content:start;min-width:0}
+.steps .num{width:68px;height:68px;border-radius:50%;background:var(--navy);border:1px solid var(--gold);display:grid;place-items:center;font:300 2rem/1 var(--f-display);font-style:italic;color:var(--gold-lt);position:relative;transition:background .4s var(--ease),color .4s var(--ease)}
+.steps li:hover .num{background:var(--gold);color:var(--navy-900)}
+.steps h3{margin-top:12px;font-size:1.7rem}
+.steps p{color:var(--ink-soft);max-width:34ch}
+.process-cta{margin-top:clamp(48px,6vw,72px);padding-top:32px;border-top:1px solid var(--line-light);display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between}
+.process-cta p{font:300 clamp(1.4rem,2.4vw,1.9rem)/1.3 var(--f-display);color:var(--ink)}
+.process-cta p em{color:var(--gold-lt)}
+
+/* ---------- contact ---------- */
+.contact{background:var(--midnight);color:var(--white);position:relative}
+.contact::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(240,213,138,.03) 0 1px,transparent 1px 44px);pointer-events:none}
+.contact-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,88px);padding-block:var(--sec) clamp(48px,6vw,72px);align-items:start}
+.contact-info{display:grid;gap:28px;align-content:start;min-width:0}
+.contact-info h2 em{color:var(--gold-lt)}
+.details{margin:8px 0 0;padding:0;display:grid}
+.details > div{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:end;padding:18px 0;border-bottom:1px solid var(--line-dark)}
+.details > div:first-child{border-top:1px solid var(--line-dark)}
+.details dt{grid-column:1/-1;font:600 .68rem/1.2 var(--f-caps);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.details dd{margin:0;font-size:1.12rem;color:var(--white);min-width:0;overflow-wrap:anywhere}
+.details dd a{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .3s,color .3s}
+.details dd a:hover{color:var(--gold-lt);border-color:var(--gold-lt)}
+.details small{display:block;color:var(--on-dark-soft);font-size:.86rem}
+.copy{background:none;border:1px solid var(--line-dark);color:var(--on-dark-soft);font:500 .74rem/1 var(--f-body);padding:8px 10px;cursor:pointer;transition:color .3s,border-color .3s}
+.copy:hover{color:var(--gold-lt);border-color:var(--gold-lt)}
+.map-card{background:var(--panel);color:var(--ink);border-top:3px solid var(--gold);overflow:hidden}
+.map-head{display:flex;gap:14px;align-items:center;padding:18px 22px}
+.map-head svg{width:22px;height:22px;flex:none;stroke:var(--gold);fill:none;stroke-width:1.6}
+.map-head small{display:block;font-size:.8rem;color:var(--ink-soft)}
+.map-head strong{font-weight:600;font-size:1.05rem}
+.map{display:block;position:relative;height:260px;background:var(--navy);border-top:1px solid var(--line-light)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map-static{background:
+  repeating-linear-gradient(90deg,rgba(84,118,157,.25) 0 1px,transparent 1px 56px),
+  repeating-linear-gradient(0deg,rgba(84,118,157,.25) 0 1px,transparent 1px 56px),var(--navy);text-decoration:none}
+.map-static .pin{position:absolute;left:50%;top:50%;width:30px;height:40px;transform:translate(-50%,-100%)}
+.map-static span{position:absolute;left:12px;top:12px;background:var(--white);color:#1A3F73;font-weight:600;font-size:.85rem;padding:8px 12px;box-shadow:0 2px 8px rgba(3,11,28,.15)}
+
+.form{background:var(--panel);color:var(--ink);padding:clamp(28px,4vw,48px);display:grid;gap:20px;align-content:start;min-width:0;border-top:3px solid var(--gold)}
+.form h3{font-size:1.9rem}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.field{display:grid;gap:8px;min-width:0}
+.field label{font:600 .8rem/1 var(--f-body);color:var(--ink);letter-spacing:.02em}
+.field label span{color:var(--accent-txt);font-weight:500}
+.field input,.field textarea{width:100%;font:400 1rem/1.5 var(--f-body);color:var(--ink);background:var(--navy);border:1px solid transparent;border-bottom:1px solid var(--steel);padding:13px 14px;border-radius:0;transition:border-color .3s,background .3s}
+.field textarea{min-height:140px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;background:var(--logo-navy);border-color:var(--gold)}
+.field input::placeholder,.field textarea::placeholder{color:#6F86A6}
+.form-foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.form-note{font-size:.8rem;color:var(--ink-soft);max-width:36ch}
+.status{font-size:.92rem;padding:14px 16px;background:rgba(84,118,157,.2);border-left:3px solid var(--gold);color:var(--ink)}
+.status.err{border-left-color:#E07A63;background:rgba(224,122,99,.12)}
+.dev-note{font-size:.76rem;color:var(--accent-txt);border-top:1px dashed var(--line-light);padding-top:14px}
+
+/* ---------- footer ---------- */
+.site-footer{background:#000A16;color:var(--on-dark-soft);font-size:.93rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:40px;padding-block:64px 40px}
+.foot-grid > div{display:grid;gap:14px;align-content:start;min-width:0}
+.foot-grid img{height:70px;width:auto}
+.foot-h{font:600 .7rem/1 var(--f-caps);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.foot-grid a{text-decoration:none;color:var(--on-dark)}
+.foot-grid a:hover{color:var(--gold-lt)}
+.foot-bottom{border-top:1px solid var(--line-dark);padding-block:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:.82rem}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-logo{max-width:520px;width:100%;margin-inline:auto}
+  .hero-logo img{width:108%;margin-left:-4%}
+  .hero::before{background:linear-gradient(180deg,#000A16 0%,#000A16 36%,rgba(0,10,22,.9) 52%,rgba(7,21,47,.9) 100%)}
+  .about-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
+  .portrait{max-width:420px}
+  .sec-head{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .menu-btn{display:inline-flex;margin-left:auto}
+  .nav{justify-content:flex-end}
+  .nav-links{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--navy-900);border-bottom:1px solid var(--line-dark);
+    padding:8px max(var(--gutter),env(safe-area-inset-right,0px)) 24px max(var(--gutter),env(safe-area-inset-left,0px));display:none}
+  .menu-open .nav-links{display:flex}
+  .nav-links li{border-bottom:1px solid var(--line-dark)}
+  .nav-links li:last-child{border:0;padding-top:18px}
+  .nav-links a{display:block;padding:16px 0;font-size:1.05rem}
+  .nav-links .btn{display:inline-flex}
+}
+@media (max-width:720px){
+  .hero-band ul{grid-template-columns:1fr}
+  .hero-band li,.hero-band li + li{padding:16px 0;border-left:0}
+  .hero-band li + li{border-top:1px solid var(--line-dark)}
+  .why-list{grid-template-columns:1fr;gap:32px}
+  .steps{grid-template-columns:1fr;gap:36px}
+  .steps::before{left:34px;right:auto;top:0;bottom:0;width:1px;height:auto;background:linear-gradient(180deg,var(--gold),rgba(214,169,67,.2))}
+  .steps li{grid-template-columns:68px 1fr;column-gap:20px;padding-right:0}
+  .steps .num{grid-row:span 2}
+  .steps h3{margin-top:14px}
+  .foot-grid{grid-template-columns:1fr}
+  .svc-self{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .svc-grid{grid-template-columns:1fr}
+  .form .row{grid-template-columns:1fr}
+  .map{height:220px}
+  .brand img,.scrolled .brand img{height:58px}
+  .hero-ctas .btn{flex:1 1 100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+
+<!-- Language: Latvian (primary). For English later: duplicate this file to /en/index.html, translate the text,
+     and add an LV / EN switch inside .nav-links. Every section has a stable id so both versions share anchors. -->
+<a href="#saturs" style="position:absolute;left:-9999px">Pāriet uz saturu</a>
+
+<header class="site-header" id="top-bar">
+  <nav class="wrap nav" aria-label="Galvenā navigācija">
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Atvērt izvēlni"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#sakums">Sākums</a></li>
+      <li><a href="#pakalpojumi">Pakalpojumi</a></li>
+      <li><a href="#par-mums">Par mums</a></li>
+      <li><a href="#kontakti">Kontakti</a></li>
+      <li><a class="btn btn-gold" href="#kontakti">Sazināties</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="saturs" lang="lv">
+
+  <!-- A · HERO -->
+  <section class="hero on-dark" id="sakums" aria-labelledby="hero-title">
+    <img class="hero-bg" src="hero-bg.webp" alt="" width="678" height="452" fetchpriority="high">
+    <div class="wrap hero-grid">
+      <div class="hero-logo">
+        <img src="logo.webp" alt="Aija Gofmane – Grāmatvedība un konsultācijas, SIA International Property Service logotips" width="1050" height="700" fetchpriority="high">
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow">Liepāja · Grāmatvedība un konsultācijas</span>
+        <h1 id="hero-title">Skaidri skaitļi.<br><em>Sakārtots</em> bizness.</h1>
+        <p class="lead">Rūpīga grāmatvedības uzskaite, nodokļu jautājumi un saprotamas konsultācijas uzņēmumiem un pašnodarbinātajiem, kas vēlas zināt, kā patiesībā klājas viņu biznesam.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="#kontakti">Pieteikt konsultāciju
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+          <a class="btn btn-ghost" href="#pakalpojumi">Mūsu pakalpojumi</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap hero-band">
+      <ul>
+        <li><b>i.</b>Individuāla pieeja katram klientam</li>
+        <li><b>ii.</b>Precīza un savlaicīga uzskaite</li>
+        <li><b>iii.</b>Konsultācijas saprotamā valodā</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- C · PAR MUMS -->
+  <section class="about" id="par-mums" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <figure class="portrait" style="margin:0">
+<img src="aija.webp" alt="Aija Gofmane savā birojā" width="720" height="900" loading="lazy">
+        <figcaption>Aija Gofmane<small>Grāmatvedība un konsultācijas</small></figcaption>
+      </figure>
+      <div class="about-copy">
+        <span class="eyebrow">Par mums</span>
+        <h2 id="about-title">Grāmatvedība ar <em>personisku</em> attieksmi.</h2>
+        <p>Esmu <strong>Aija Gofmane</strong>. Kopā ar <strong>SIA International Property Service</strong> palīdzu uzņēmējiem sakārtot grāmatvedību un saprast savu finanšu situāciju.</p>
+        <p>Strādāju profesionāli un atbildīgi: dokumentiem jābūt kārtībā, atskaitēm jābūt iesniegtām laikā, un skaitļiem jābūt precīziem. Katram klientam pievēršu individuālu uzmanību, jo katram uzņēmumam ir savas vajadzības un savs darba ritms.</p>
+        <p>Man ir svarīgas ilgtermiņa sadarbības attiecības, kurās klients var uzticēties un vienmēr saņemt skaidru atbildi. Grāmatvedības jautājumus skaidroju vienkārši, lai Jūs varētu pieņemt lēmumus ar pārliecību.</p>
+        <!-- Optional: add confirmed facts here (experience, qualifications, software used) once the client approves them. -->
+        <blockquote class="quote">
+          <p>“Mans mērķis ir, lai Jūs vienmēr zinātu, kā patiesībā klājas Jūsu uzņēmumam.”</p>
+          <cite>Aija Gofmane</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- D · PAKALPOJUMI (proposed list — confirm with client before launch) -->
+  <section class="services" id="pakalpojumi" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Pakalpojumi</span>
+          <h2 id="svc-title">Viss, kas uzņēmumam <em>vajadzīgs</em> grāmatvedībā.</h2>
+        </div>
+        <p class="lead">No ikdienas uzskaites līdz gada pārskatam un nodokļu jautājumiem. Pakalpojumus sniedzam gan uzņēmumiem, gan saimnieciskās darbības veicējiem, un sadarbības apjomu pielāgojam Jūsu vajadzībām.</p>
+      </div>
+
+      <div class="svc-grid">
+        <article class="svc">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h24a4 4 0 0 1 4 4v28H14a4 4 0 0 1-4-4z"/><path d="M10 36a4 4 0 0 1 4-4h24"/><path d="M17 15h14M17 21h14M17 27h8"/></svg>
+          <h3>Grāmatvedības pakalpojumi</h3>
+          <p>Pilna cikla grāmatvedība, lai Jūs varētu pilnībā koncentrēties uz savu biznesu.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40h32"/><path d="M12 40V18l12-8 12 8v22"/><path d="M19 40v-9h10v9"/><path d="M18 22h3M27 22h3"/></svg>
+          <h3>Uzņēmumu grāmatvedības uzskaite</h3>
+          <p>Kārtīga ikdienas uzskaite: rēķini, maksājumi, pamatlīdzekļi un krājumi vienuviet.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="15"/><path d="M18 30l12-12"/><circle cx="19" cy="19" r="2"/><circle cx="29" cy="29" r="2"/></svg>
+          <h3>Nodokļu konsultācijas</h3>
+          <p>Skaidras atbildes par nodokļu aprēķiniem, deklarācijām un termiņiem.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 39h30"/><path d="M14 33V23M22 33V15M30 33V19M38 33V11" /><path d="M10 18l8-6 7 5 13-9"/></svg>
+          <h3>Finanšu pārskatu sagatavošana</h3>
+          <p>Gada pārskati un starpperiodu pārskati, sagatavoti precīzi un laikā.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M15 10h15l7 7v21H15z"/><path d="M30 10v7h7"/><path d="M11 14v28h21"/><path d="M20 24h11M20 30h11"/></svg>
+          <h3>Dokumentu un atskaišu sagatavošana</h3>
+          <p>Atskaites VID un citām iestādēm, kā arī nepieciešamo dokumentu sagatavošana.</p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h22v15H17l-6 5v-5H8z"/><path d="M30 19h10v14h-3v5l-6-5H20v-6"/></svg>
+          <h3>Grāmatvedības konsultācijas</h3>
+          <p>Individuālas konsultācijas grāmatvedības un finanšu jautājumos, kad tās nepieciešamas.</p>
+        </article>
+      </div>
+
+      <div class="svc-self">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="15" r="7"/><path d="M10 41c0-8 6-14 14-14s14 6 14 14"/><path d="M30 33l3 3 6-7"/></svg>
+        <div>
+          <h3>Saimnieciskās darbības veicējiem</h3>
+          <p>Grāmatvedības pakalpojumi tiek sniegti arī saimnieciskās darbības veicējiem – pašnodarbinātām personām. Pastāstiet par savu darbību, un piedāvāsim piemērotāko risinājumu.</p>
+        </div>
+        <a class="text-link" href="#kontakti">Sazināties</a>
+      </div>
+
+      <div class="svc-note">
+        <p>Nepieciešams kas cits? Pastāstiet par savu situāciju, un atradīsim piemērotāko risinājumu.</p>
+        <a class="text-link" href="#kontakti">Uzdot jautājumu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- E · KĀPĒC MŪS -->
+  <section class="why on-dark" id="kapec-mes" aria-labelledby="why-title">
+    <div class="wrap why-grid">
+      <div class="why-intro">
+        <span class="eyebrow">Kāpēc izvēlēties mūs?</span>
+        <h2 id="why-title">Uzticama grāmatvedība sākas ar <em>uzmanību detaļām.</em></h2>
+        <p class="lead">Jūsu uzņēmuma finanses ir pārāk svarīgas, lai tās uzticētu nejaušībai.</p>
+      </div>
+      <ul class="why-list">
+        <li><span class="mark" aria-hidden="true"></span><h3>Precizitāte un uzticamība</h3><p>Rūpīgi pārbaudīti dati un atskaites, kas iesniegtas laikā.</p></li>
+        <li><span class="mark" aria-hidden="true"></span><h3>Individuāla pieeja</h3><p>Sadarbību veidojam atbilstoši Jūsu uzņēmuma nozarei, apjomam un ritmam.</p></li>
+        <li><span class="mark" aria-hidden="true"></span><h3>Profesionāla konsultēšana</h3><p>Sarežģītus grāmatvedības un nodokļu jautājumus skaidrojam vienkāršā valodā.</p></li>
+        <li><span class="mark" aria-hidden="true"></span><h3>Pārskatāma sadarbība</h3><p>Jūs vienmēr zināt, kas tiek darīts, kādi ir termiņi un kas ir nākamais solis.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- F · SADARBĪBA -->
+  <section class="process" id="sadarbiba" aria-labelledby="proc-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Kā notiek sadarbība?</span>
+          <h2 id="proc-title">Trīs <em>vienkārši</em> soļi.</h2>
+        </div>
+        <p class="lead">Sadarbības sākums neprasa daudz laika. Pietiek ar vienu sarunu.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="num">1</span><h3>Sazināmies</h3><p>Pārrunājam Jūsu uzņēmuma vajadzības un pašreizējo situāciju.</p></li>
+        <li><span class="num">2</span><h3>Vienojamies</h3><p>Izvēlamies Jums piemērotāko sadarbības modeli un darba apjomu.</p></li>
+        <li><span class="num">3</span><h3>Sadarbojamies</h3><p>Nodrošinām profesionālu grāmatvedības atbalstu ikdienā.</p></li>
+      </ol>
+      <div class="process-cta">
+        <p>Pirmais solis ir <em>vienkāršs.</em></p>
+        <a class="btn btn-navy" href="#kontakti">Pieteikt konsultāciju
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- G · KONTAKTI -->
+  <section class="contact on-dark" id="kontakti" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Kontakti</span>
+        <h2 id="contact-title">Sāksim ar <em>sarunu.</em></h2>
+        <p class="lead">Zvaniet, rakstiet vai aizpildiet formu. Pastāstiet par savu uzņēmumu, un vienosimies par piemērotāko sadarbību.</p>
+
+        <dl class="details">
+          <div><dt>Kontaktpersona</dt><dd>Aija Gofmane<small>SIA International Property Service</small></dd><span></span></div>
+          <div><dt>Juridiskā adrese</dt><dd>Celmu iela 7–6, Liepāja, LV-3405</dd><span></span></div>
+          <div><dt>Mobilais</dt><dd><a href="tel:+37127574406" id="tel">+371 275 74406</a></dd><button class="copy" type="button" data-copy="+371 275 74406">Kopēt</button></div>
+          <div><dt>E-pasts</dt><dd><a href="mailto:figaro9@inbox.lv">figaro9@inbox.lv</a></dd><button class="copy" type="button" data-copy="figaro9@inbox.lv">Kopēt</button></div>
+        </dl>
+
+        <div class="map-card">
+          <div class="map-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <div><small>Biroja adrese</small><strong>Bāriņu iela 15, 3. stāvs, Liepāja</strong></div>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps?q=B%C4%81ri%C5%86u%20iela%2015%2C%20Liep%C4%81ja&amp;z=16&amp;hl=lv&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Karte: Bāriņu iela 15, Liepāja"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="form" id="contact-form" novalidate aria-labelledby="form-title">
+        <h3 id="form-title">Pieteikt konsultāciju</h3>
+        <div class="row">
+          <div class="field"><label for="f-name">Vārds, uzvārds</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Jūsu vārds" required></div>
+          <div class="field"><label for="f-phone">Tālrunis <span>(neobligāti)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+371 …"></div>
+        </div>
+        <div class="field"><label for="f-email">E-pasts</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="jusu@epasts.lv" required></div>
+        <div class="field"><label for="f-msg">Ziņojums</label><textarea id="f-msg" name="message" placeholder="Īsumā par Jūsu uzņēmumu un jautājumu" required></textarea></div>
+        <div class="form-foot">
+          <button class="btn btn-gold" type="submit">Nosūtīt ziņu
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button>
+          <p class="form-note">Jūsu datus izmantosim tikai, lai atbildētu uz ziņu.</p>
+        </div>
+        <div class="status" id="form-status" role="status" hidden></div>
+        <!-- This note hides itself once WEB3FORMS_KEY is set in the script at the bottom of the page. -->
+        <p class="dev-note" id="dev-note">Izstrādes piezīme: forma vēl nav pieslēgta e-pasta servisam, tāpēc ziņas netiek nosūtītas.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- H · FOOTER -->
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <img src="wordmark.webp" alt="Aija Gofmane – Grāmatvedība un konsultācijas" width="280" height="52">
+      <p>SIA International Property Service<br>Grāmatvedība un konsultācijas uzņēmumiem un pašnodarbinātajiem.</p>
+    </div>
+    <div>
+      <span class="foot-h">Navigācija</span>
+      <ul>
+        <li><a href="#sakums">Sākums</a></li>
+        <li><a href="#pakalpojumi">Pakalpojumi</a></li>
+        <li><a href="#par-mums">Par mums</a></li>
+        <li><a href="#kontakti">Kontakti</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="foot-h">Kontakti</span>
+      <ul>
+        <li>Birojs: Bāriņu iela 15, 3. stāvs, Liepāja</li>
+        <li>Jur. adrese: Celmu iela 7–6, Liepāja, LV-3405</li>
+        <li>Mob.: <a href="tel:+37127574406">+371 275 74406</a></li>
+        <li><a href="mailto:figaro9@inbox.lv">figaro9@inbox.lv</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Aija Gofmane · SIA International Property Service</span>
+      <a href="#sakums" style="color:inherit;text-decoration:none">Uz augšu ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var header=document.getElementById('top-bar'), btn=document.getElementById('menu-btn'), links=document.getElementById('nav-links');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY>40); }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  btn.addEventListener('click',function(){
+    var open=header.classList.toggle('menu-open');
+    btn.setAttribute('aria-expanded',open); btn.setAttribute('aria-label',open?'Aizvērt izvēlni':'Atvērt izvēlni');
+  });
+  links.addEventListener('click',function(e){ if(e.target.closest('a')){ header.classList.remove('menu-open'); btn.setAttribute('aria-expanded','false'); } });
+
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy');
+      function done(){ b.textContent='Nokopēts'; setTimeout(function(){ b.textContent='Kopēt'; },1600); }
+      try{ navigator.clipboard.writeText(t).then(done,function(){ select(b); }); }catch(e){ select(b); }
+    });
+  });
+  function select(b){ var dd=b.previousElementSibling; var r=document.createRange(); r.selectNodeContents(dd); var s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  /* Form: sends through Web3Forms (free). Paste the access key created with figaro9@inbox.lv between the quotes. */
+  var WEB3FORMS_KEY='';
+  var FORM_ENDPOINT='https://api.web3forms.com/submit';
+  if(WEB3FORMS_KEY){ var dn=document.getElementById('dev-note'); if(dn) dn.hidden=true; }
+  var form=document.getElementById('contact-form'), status=document.getElementById('form-status');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=form.name.value.trim(), email=form.email.value.trim(), msg=form.message.value.trim();
+    status.hidden=false; status.classList.remove('err');
+    if(!name||!msg||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      status.classList.add('err');
+      status.textContent='Lūdzu, ievadiet vārdu, derīgu e-pasta adresi un ziņojumu.';
+      return;
+    }
+    if(!WEB3FORMS_KEY){
+      status.textContent='Ziņa netika nosūtīta: forma vēl nav pieslēgta. Lūdzu, rakstiet uz figaro9@inbox.lv vai zvaniet +371 275 74406.';
+      return;
+    }
+    var fd=new FormData(form); fd.append('access_key',WEB3FORMS_KEY); fd.append('subject','Jauns pieteikums no mājaslapas – '+name); fd.append('from_name','Aija Gofmane mājaslapa'); fd.append('replyto',email);
+    fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:fd})
+      .then(function(r){ if(!r.ok) throw 0; form.reset(); status.textContent='Paldies! Ziņa nosūtīta. Atbildēsim pēc iespējas ātrāk.'; })
+      .catch(function(){ status.classList.add('err'); status.textContent='Neizdevās nosūtīt ziņu. Lūdzu, rakstiet uz figaro9@inbox.lv vai zvaniet +371 275 74406.'; });
+  });
+})();
+</script>
+
+</body>
+</html>
